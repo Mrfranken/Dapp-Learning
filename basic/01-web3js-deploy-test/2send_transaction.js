@@ -16,6 +16,8 @@ const addressTo = '0xA6353f9f077d2CE0DAd84E1BE837f6802e5772DF';
 let wallet = new ethers.Wallet(account_from.privateKey, provider);
 
 
+let msg = "Hello World!";
+
 const send = async () => {
     console.log(`Attempting to send transaction from ${wallet.address} to ${addressTo}`);
 
@@ -26,10 +28,10 @@ const send = async () => {
     // };
 
     // send msg
-    const tx = {
-        to: addressTo, // value: ethers.utils.parseEther('0.05'),
-        data: "0x496c6f7665457468657265756d"
-    };
+    // const tx = {
+    //     to: addressTo, // value: ethers.utils.parseEther('0.05'),
+    //     data: ethers.utils.formatBytes32String(msg)
+    // };
 
     // send msg or ether and configure gasLimit and gasPrice
     // const tx = {
@@ -40,11 +42,13 @@ const send = async () => {
     //     gasPrice: ethers.utils.parseUnits('1.5', 'gwei'),
     // };
 
+    // ============ send transaction method 1 ============
     const createReceipt = await wallet.sendTransaction(tx);
     await createReceipt.wait();
     console.log(`Transaction successful with hash: ${createReceipt.hash}`);
     console.log(JSON.stringify(createReceipt));
 
+    // ============ send transaction method 2 ============
     // wallet.sendTransaction(tx).then((msg) => {
     //     console.log(JSON.stringify(msg));
     //     console.log(`Transaction successful with hash: ${msg.hash}`);

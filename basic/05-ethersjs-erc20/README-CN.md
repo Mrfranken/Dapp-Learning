@@ -36,7 +36,7 @@
 3. 执行测试
 
    ```sh
-   node index.js
+   node 3index.js
    ```
 
 ## 参考文档

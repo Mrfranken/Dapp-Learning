@@ -52,7 +52,7 @@ npx hardhat run scripts/random-number-vrf.js --network rinkeby
 
 - 生成随机  Character  
 ```
-npx hardhat run scripts/transaction.js --network rinkeby
+npx hardhat run scripts/2send_transaction.js --network rinkeby
 ``` 
 
 ## 参考链接

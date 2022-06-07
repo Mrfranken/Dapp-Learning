@@ -40,7 +40,7 @@
 3. 执行测试
 
    ```sh
-   node index.js
+   node 3index.js
    ```
 
 ## compile.js 代码逻辑说明
@@ -93,7 +93,7 @@
    module.exports = contractFile;
    ```
 
-## index.js 代码逻辑说明
+## 3index.js 代码逻辑说明
 
 1. 编译合约  
    导入 compile 文件中的 SimpleToken 合约对象

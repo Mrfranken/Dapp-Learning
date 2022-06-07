@@ -19,7 +19,7 @@ The demo code provides developers with an overview of how to sign, send, and rec
     PRIVATE_KEY=YOUR_PRIVATE_KEY
     INFURA_ID=YOUR_PROJECT_ID
     ``` 
-4. Run the `index.js` file: `node index.js`
+4. Run the `3index.js` file: `node 3index.js`
 
 # Interpret Source Code
 ## `compile.js`
@@ -66,7 +66,7 @@ If you want to use the `contractFile` object in other `js` files, you need to ex
 module.exports = contractFile;
 ```  
 
-## `index.js`
+## `3index.js`
 
 ### 1. Load the `Incrementer` smart contract from `compile` file
 ```js

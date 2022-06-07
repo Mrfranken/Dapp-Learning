@@ -35,11 +35,11 @@ PRIVATE_KEY=xxxxxxxxxxxxxxxx
 INFURA_ID=yyyyyyyy
 ```
 
-3） 执行 index.js
+3） 执行 3index.js
 ```
-node index.js
+node 3index.js
 ```
-## index.js 代码逻辑说明  
+## 3index.js 代码逻辑说明  
 1) 读取私钥  
 出于安全考虑, 私钥没有进行硬编码, 而是通过环境变量的方式进行获取. 启动测试时, dotenv 插件自动读取 .env 配置文件中的配置项, 然后加载为环境变量, 之后在代码中可以通过 process.env 读取私钥 ( 也包括其他环境变量 )    
 ```js

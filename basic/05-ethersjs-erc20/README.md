@@ -35,7 +35,7 @@ This demo shows the procedure for creating an `ERC20` contract using `ethers.js`
 3. Run it
 
    ```bash
-   node index.js
+   node 3index.js
    ```
 
 ## References

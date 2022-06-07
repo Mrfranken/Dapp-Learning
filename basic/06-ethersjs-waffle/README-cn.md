@@ -17,9 +17,9 @@ Waffle 详细使用方法可以参考 [Waffle 官网](https://ethereum-waffle.re
   SimpleToken.sol 合约的单元测试代码. 这里只写了一个测试脚本, 实际开发中, 可以在 test 目录下, 针对不同的合约, 编写多个单元测试脚本, 之后使用 yarn test 命令即可执行 test 目录下所有的单元测试脚本.  
   在 simpleTokenTest.js 脚本中, 对 SimpleToken.sol 合约的各个接口进行简单的测试, 可以参考此样例编写其他合约的单元测试代码.
 
-- index.js  
+- 3index.js  
   外部合约, 需要单独进行调用. 对应实际生产环境中, 当单元测试通过后, 就可以调用此脚本进行实际的生成操作.  
-  此脚本名字自行进行定义, 这里是使用 index.js 进行指定
+  此脚本名字自行进行定义, 这里是使用 3index.js 进行指定
 
 ## 操作步骤
 
@@ -49,10 +49,10 @@ cp .env.example .env
 yarn test
 ```
 
-- 5 测试 index.js
+- 5 测试 3index.js
 
 ```bash
-node index.js
+node 3index.js
 ```
 ## 说明
 在使用命yarn install命令，提示无法找到yarn命令时（比如在VMware上跑），可以尝试执行：

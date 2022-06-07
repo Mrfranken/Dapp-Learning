@@ -21,11 +21,11 @@
 
 ```shell
 TypeError: Cannot read property 'toHexString' of undefined
-    at isHexable (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/bytes/lib/index.js:9:21)
-    at hexlify (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/bytes/lib/index.js:175:9)
-    at new SigningKey (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/signing-key/lib/index.js:20:82)
-    at new Wallet (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/wallet/lib/index.js:123:36)
-    at Object.<anonymous> (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/index.js:39:14)
+    at isHexable (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/bytes/lib/3index.js:9:21)
+    at hexlify (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/bytes/lib/3index.js:175:9)
+    at new SigningKey (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/signing-key/lib/3index.js:20:82)
+    at new Wallet (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/node_modules/@ethersproject/wallet/lib/3index.js:123:36)
+    at Object.<anonymous> (/Users/jolycao/Dapp-Learning/basic/05-ethersjs-erc20/3index.js:39:14)
     at Module._compile (internal/modules/cjs/loader.js:1085:14)
     at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
     at Module.load (internal/modules/cjs/loader.js:950:32)

@@ -52,7 +52,7 @@ yarn
 
 - 执行测试脚本  
 ```
-node src/ethers-ens/index.js
+node src/ethers-ens/3index.js
 ```
 
 ## 参考链接

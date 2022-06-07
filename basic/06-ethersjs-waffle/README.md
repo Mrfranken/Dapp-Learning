@@ -17,7 +17,7 @@ You can refer to the offical website of Waffle width the detailed usage(https://
   The unit test code of SimpleToken.sol contract. There is only one test script here, you could write multiple scripts of unit test codes for different contracts under the "test" directory during the development.
   Each interface of SimpleToken.sol contract will be simplely tested in the simpleTokenTest.js script.You can refer to the sample to write unit test codes of other contracts.
 
-- index.js
+- 3index.js
   External contracts needs to be invoked separately. When unit test is passed, the script could be called to generate some actions in the production environment.
 
 ## steps
@@ -48,10 +48,10 @@ cp .env.example .env
 yarn test
 ```
 
-- 5 test index.js
+- 5 test 3index.js
 
 ```bash
-node index.js
+node 3index.js
 ```
 
 ## Note

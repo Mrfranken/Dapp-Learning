@@ -29,7 +29,7 @@ This basic task is to show how to interact with ERC20 contract, so the developer
     PRIVATE_KEY=YOUR_PRIVATE_KEY
     INFURA_ID=YOUR_PROJECT_ID
     ``` 
-4. Run the `index.js` file: `node index.js`
+4. Run the `3index.js` file: `node 3index.js`
 
 ## Interpret Source Code
 
@@ -87,7 +87,7 @@ module.exports = contractFile;
 
 ---
 
-### `index.js`
+### `3index.js`
 
 1. Load the `SimpleToken` smart contract from `compile` file
     

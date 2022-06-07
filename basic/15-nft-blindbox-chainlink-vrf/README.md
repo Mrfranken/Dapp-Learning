@@ -52,7 +52,7 @@ npx hardhat run scripts/random-number-vrf.js --network rinkeby
 
 - Generate random Character  
 ```
-npx hardhat run scripts/transaction.js --network rinkeby
+npx hardhat run scripts/2send_transaction.js --network rinkeby
 ``` 
 
 ## Refer to the link

@@ -3,8 +3,6 @@ const contractFile = require('./compile')
 
 require('dotenv').config()
 const privateKey = process.env.PRIVATE_KEY;
-console.log(1)
-
 
 const provider = new ethers.providers.InfuraProvider('kovan', process.env.INFURA_ID)
 
@@ -35,14 +33,14 @@ Deploy();
 //     console.log(`Attempting to deploy from account: ${wallet.address}`);
 //     const factory = new ethers.ContractFactory(abi, bytecode, wallet);
 //     Send Tx (Initial Value set to 5) and Wait for Receipt
-    // const deployedContract = await factory.deploy(
-    //     'hello',
-    //     'Dapp',
-    //     1,
-    //     100000000,
-    //     {gasLimit: 8000000}
-    // );
-    // await deployedContract.deployed();
+// const deployedContract = await factory.deploy(
+//     'hello',
+//     'Dapp',
+//     1,
+//     100000000,
+//     {gasLimit: 8000000}
+// );
+// await deployedContract.deployed();
 // }
 // Trans()
 //     .then(() => process.exit(0))

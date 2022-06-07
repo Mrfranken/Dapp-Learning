@@ -28,3 +28,10 @@ const balances = async () => {
 };
 
 balances();
+
+
+const listAccounts = async () => {
+    const account = await provider.listAccounts();
+    console.log(account);
+}
+listAccounts();
