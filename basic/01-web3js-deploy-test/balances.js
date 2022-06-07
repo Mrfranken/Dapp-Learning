@@ -9,25 +9,22 @@ const provider = new ethers.providers.InfuraProvider('kovan', infura_id)
 
 const addressFrom = '0x998ede1C7B8d2F8099F0fBde395f30e76AeC7BDd';
 const addressTo = '0xA6353f9f077d2CE0DAd84E1BE837f6802e5772DF';
-var g;
 
-const getBalance_USDT = async () => {
-    provider.getBalance(addressFrom).then()
-    g = ethers.utils.formatEther(await provider.getBalance(addressFrom))
+provider.getBalance(addressFrom).then(
+    (result) => {
+        g = ethers.utils.formatEther(result);
+        console.log(g)
+    }
+)
 
+
+const balances = async () => {
+    const balanceFrom = ethers.utils.formatEther(await provider.getBalance(addressFrom));
+
+    const balanceTo = ethers.utils.formatEther(await provider.getBalance(addressTo));
+
+    console.log(`The balance of ${addressFrom} is: ${balanceFrom} ETH`);
+    console.log(`The balance of ${addressTo} is: ${balanceTo} ETH`);
 };
-a = getBalance_USDT();
-console.log(g)
 
-
-
-// const balances = async () => {
-//     const balanceFrom = ethers.utils.formatEther(await provider.getBalance(addressFrom));
-//
-//     const balanceTo = ethers.utils.formatEther(await provider.getBalance(addressTo));
-//
-//     console.log(`The balance of ${addressFrom} is: ${balanceFrom} ETH`);
-//     console.log(`The balance of ${addressTo} is: ${balanceTo} ETH`);
-// };
-//
-// balances();
+balances();

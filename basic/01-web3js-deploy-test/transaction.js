@@ -14,9 +14,6 @@ const account_from = {
 const addressTo = '0xA6353f9f077d2CE0DAd84E1BE837f6802e5772DF';
 
 let wallet = new ethers.Wallet(account_from.privateKey, provider);
-provider.getBalance('0x998ede1C7B8d2F8099F0fBde395f30e76AeC7BDd').then((b) => {
-    console.log(b)
-})
 
 
 const send = async () => {
@@ -29,31 +26,28 @@ const send = async () => {
     // };
 
     // send msg
-    // const tx = {
-    //     to: addressTo,
-    //     // value: ethers.utils.parseEther('0.05'),
-    //     data: "0x496c6f7665457468657265756d"
-    // };
-
-    // send msg or ether and configure gasLimit and gasPrice
     const tx = {
-        to: addressTo,
-        value: ethers.utils.parseEther('0.01'),
-        data: "0x496c6f7665457468657265756d",
-        gasLimit: 21500,
-        gasPrice: ethers.utils.parseUnits('1.5', 'gwei')
+        to: addressTo, // value: ethers.utils.parseEther('0.05'),
+        data: "0x496c6f7665457468657265756d"
     };
 
-    // const createReceipt = await wallet.sendTransaction(tx);
-    // await createReceipt.wait();
-    // console.log(`Transaction successful with hash: ${createReceipt.hash}`);
-    wallet.sendTransaction(tx).then((msg) => {
-        console.log(JSON.stringify(msg));
-        console.log(`Transaction successful with hash: ${msg.hash}`);
-    })
+    // send msg or ether and configure gasLimit and gasPrice
+    // const tx = {
+    //     to: addressTo,
+    //     value: ethers.utils.parseEther('0.01'),
+    //     data: "0x496c6f7665457468657265756d",
+    //     gasLimit: 21500,
+    //     gasPrice: ethers.utils.parseUnits('1.5', 'gwei'),
+    // };
 
-    // wallet.signTransaction(tx).then((signedTX) => {
-    //     provider.sendTransaction(signedTX).then(console.log);
+    const createReceipt = await wallet.sendTransaction(tx);
+    await createReceipt.wait();
+    console.log(`Transaction successful with hash: ${createReceipt.hash}`);
+    console.log(JSON.stringify(createReceipt));
+
+    // wallet.sendTransaction(tx).then((msg) => {
+    //     console.log(JSON.stringify(msg));
+    //     console.log(`Transaction successful with hash: ${msg.hash}`);
     // })
 
 };
